@@ -1,0 +1,456 @@
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    /*background-color: #E7E7E7;*/
+    /*background-color: rgb(0 , 86 , 144);*/
+    background-color: #000033;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+div#main{
+}
+
+
+a{
+    background:transparent;
+    color: rgb(0 , 86 , 144);
+    text-decoration:underline;
+    font-weight:bold;
+}
+
+h1{
+    margin: 0;
+    float: left;
+    color: black;
+    font-size: 3em;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+h2{
+    margin: 0;
+    float: left;
+    color: black;
+    font-size: 1.5em;
+    display: block;
+}
+
+h3{
+    margin: .5em 0 .5em 0;
+    width: 100%;
+    float: left;
+    color: black;
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+p{
+    margin: .5em 0 .5em 0;
+    width: 100%;
+    float: left;
+    color: black;
+    font-size: 1.5em;
+    display: inline-block;
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+h1.font{
+    font-size: 2em;
+}
+
+#logout{
+    position:relative;
+    z-index: 10;
+    float: right;
+    margin: 5px 5px 0 0;
+}
+
+#notice, #warning {
+    background: rosybrown;
+    margin: 1em 0;
+    padding: 4px;
+}
+form label {
+    display: inline;
+    line-height: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+#periodSelector, #nameSelector{
+    width: 100%;
+    float: left;
+    display: block;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+select {
+    color: black;
+    background-color: #F8F8F8;
+    font-weight: bold;
+    border: 1px solid black;
+    font-size: 1.5em;
+}
+
+button, input[type=submit], .button {
+    color : white;
+    background-color : rgb( 0 , 86 , 144);
+    border-color : transparent;
+    font-weight: bold;
+    font-size: 1em;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button.menu{
+    float: right;
+    display: inline-block;
+    margin: 0px 0x 0px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+}
+
+.content{
+    width: calc(100% - 2em);
+    height: auto;
+    padding: 0 1em 0 1em;
+    display: inline-block;
+}
+
+#contentheader{
+    width: 100%;
+    display: inline-block;
+    height: auto;
+}
+
+div#headerbar{
+    float: left;
+    display: inline-block;
+    width: calc(50% - 2em);
+    height: auto;
+    padding: 0 1em 0 1em;
+}
+
+.menubar{
+    float: right;
+    width: calc(50% - 2em);
+    height: auto;
+    display: inline-block;
+    margin: -0 1em 0 1em;
+}
+
+.button {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+#submit, #revert{
+    font-size: 1.5em;
+}
+#export{
+    font-size: 1em;
+}
+
+
+/* GOOGLE BUTTON */
+
+#googlebutton #googlelogo {
+  background: no-repeat url(//ssl.gstatic.com/s2/oz/images/sprites/signinbutton-094c03c836f9f91d08b943a90778d34e.png) -32px -44px;
+  height: 32px;
+  width: 32px;
+  margin-top: -1px;
+  border-style: solid;
+  border-width: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-color: #bb3f30;
+  border-right-width: 1px;
+}
+
+#googlebutton {
+  background-color: #dd4b39;
+  color: #fff;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.10);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.10);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 12px;
+  height: 31px;
+  line-height: 31px;
+  -webkit-user-select: none;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-family: Roboto,arial,sans-serif;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+  margin: 2em 0 calc(2em - 11px) 0;
+}
+
+#googlebutton #googletext {
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  display: inline-block;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+/*main - CSS for rounded page table*/
+#phead {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: white;
+}
+
+#pbody {
+    margin:0;
+    background-color: white;
+    text-align: center;
+    height: auto;
+}
+
+#pfoot {
+    height: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: white;
+}
+
+img.logo{
+    /*z-index: ;*/
+    position:relative;
+    margin-left: 12px; /*so you can see the 12px curved edge*/
+    width: 213px;
+    height: 70px;
+}
+
+.container{
+    display: inline-block;
+    float: left;
+}
+
+#pbanner{
+    height: 10px;
+    background-color: rgb(0 , 86 , 144);
+}
+
+@media screen, handheld{
+    
+    .button.menu{
+        font-size: .70em;
+    }
+
+    div#headerbar{
+        width: calc(100% - 2em);
+    }
+    div.menubar{
+        width: calc(100% - 2em);
+    }
+    #page {
+        width: calc(100% - 2em);
+        margin: 1em 1em 1em 1em;
+    }
+    p{
+        font-size: 1.25em;
+    }
+    #banner{
+        display: none;
+    }
+    #pbanner{
+        height: 10px;
+    }
+    .half{ width: 100%; }
+    .third{ width: 100%; }
+    .two-thirds{ width: 100%; }
+    
+    #clockin, #submit, #revert, #export{
+        margin: 10px auto 10px auto;
+        display: inline-block;
+        float: left;
+        width: 100%;
+        border-radius: .25em;
+        font-size: 2.5em;
+    }
+}
+@media screen and (min-width: 610px), handheld{
+    .button.menu{
+        font-size: 1em;
+    }
+
+    #page {
+        width: calc(100% - 12em);
+        margin: 1em 6em 1em 6em;
+    }
+    p{
+        font-size: 1.25em;
+    }
+    .half{ 
+        width: 100%; 
+    }
+    .third{
+        width: calc(100% - 22em);
+    }
+    .two-thirds{ 
+        width: 20em;
+        margin-left: calc(1em - 3px);
+        border-left: 3px solid rgb(0, 86, 144);
+    }
+    #clockin, #submit, #revert, #export{
+        margin: 10px auto 10px auto;
+        display: inline-block;
+        float: left;
+        width: 100%;
+        border-radius: .25em;
+        font-size: 2.5em;
+    }
+}
+@media screen and (min-width: 870px), handheld{
+    #page {
+        width: calc(100% - 12em);
+        margin: 1em 6em 1em 6em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    .half{ 
+        width: calc(50% - 2px); 
+        display: inline-block;
+        height: auto;
+    }
+    .third{ width: calc(100% - 42em); }
+    .two-thirds{ 
+        width: 40em;
+        margin-left: calc( 2em - 3px);
+        border-left: 3px solid rgb(0, 86, 144);
+    }
+    #clockin{
+        margin: 10px auto 10px auto;
+        display: inline-block;
+        float: left;
+        width: 100%;
+        border-radius: .25em;
+        font-size: 3em;
+    }
+}
+@media screen and (min-width: 1025px){
+    #page {
+        margin-left: auto;
+        margin-right: auto;
+        width: 830px;
+    }    
+    #banner{
+        display: inline-block;
+    }
+    #pbanner{
+        height: 125px;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        overflow: hidden;
+    }
+    #clockin {
+        margin: 10px auto 10px auto;
+        display: inline-block;
+        float: left;
+        width: 100%;
+        border-radius: .25em;
+        font-size: 4.5em;
+    }
+
+}
+
+/*vblu - rounded table with blue header*/
+
+table.vblu {
+    border-collapse: collapse;
+    resize: none;
+    margin: 0px 5px 0px 5px;
+    display: inline-block;
+    vertical-align:top;
+}
+
+table.vblu th, table.vblu td {
+    padding: 4px;
+    text-align: center;
+    resize: none;
+   /* border-left: 1px solid #cddcd9;*/
+    text-align: center;
+    min-width: 5em;
+}
+
+table.vblu tr.evenrow {
+    background-color: #E6E6E6;
+}
+
+table.vblu tr.oddrow {
+    background-color: #F5F5F5;
+}
+
+table.vblu  tr:nth-of-type(2n) {
+  background-color: #E6E6E6;
+}
+table.vblu  tr:nth-of-type(2n+1) {
+  background-color: #F5F5F5;
+}
+
+table.vblu tr:first-child  th:first-child{ 
+    border-top-left-radius: 12px;
+}
+
+table.vblu tr:first-child  th:last-child{ 
+    border-top-right-radius: 12px;
+}
+
+table.vblu tr:last-child  td:first-child{ 
+    border-bottom-left-radius: 12px;
+}
+
+table.vblu tr:last-child  td:last-child{ 
+    border-bottom-right-radius: 12px;
+}
+
+table.vblu td:first-child , table.vblu th:first-child{
+    border-left: none;
+}
+
+table.vblu th {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 86, 144);
+}
+
+table.vblu td.error{
+    background-color: #F26D89;
+}
+
+table.vblu td.overlap{
+    background-color: #E6F55F;
+}
+
+

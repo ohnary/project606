@@ -1,0 +1,33 @@
+!!! 5
+%html
+  %head
+    %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1' } 
+    %title TimeClock  
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+    
+
+
+  %body
+    -if flash[:notice]
+      #notice.message=  flash[:notice]
+    -elsif flash[:warning]
+      #warning.message= flash[:warning]
+    %div#page
+      %div#phead      
+        -if @current_user
+          -if @current_user.admin
+            =link_to employees_path do
+              %img.logo{:src => image_path('logo_website.jpg')}
+          -else
+            =link_to "/employees/#{@current_user.id}/timesheets/1/current" do
+              %img.logo{:src => image_path('logo_website.jpg')}
+        -else
+          %img.logo{:src => image_path('logo_website.jpg' )}
+      %div#pbanner
+        %img#banner{:src => image_path('image.jpg')}
+      %div#pbody
+        #main
+          = yield
+      %div#pfoot

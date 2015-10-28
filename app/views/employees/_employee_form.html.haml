@@ -1,0 +1,15 @@
+-#This is a partial to be used when ever an employee form is needed
+- unless @employee.errors.empty?
+  #warning
+    Errors prevented this employee from being #{controller.action_name}d
+    %ul
+      - @employee.errors.full_messages.each do |error|
+        %li=  error
+%p
+  = label :employee , :name, 'Name:'
+  = text_field :employee, :name
+%p
+  = label :employee , :email, "Email:"
+  = text_field :employee, :email
+%br
+%br
